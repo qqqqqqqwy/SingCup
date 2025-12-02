@@ -7,7 +7,7 @@ This repository contains the official PyTorch implementation for the paper: **"S
 
 SingCup is a low-cost, compact system designed to detect sugar concentration in liquids using active acoustic sensing. Unlike traditional static methods, SingCup leverages **Variable Resonance Spectrograms (VRS)** generated during the liquid pouring process to capture rich, dynamic channel responses.
 
-## 🏗️ System Architecture
+## System Architecture
 
 The software pipeline consists of three main components:
 
@@ -15,7 +15,7 @@ The software pipeline consists of three main components:
 2.  **Denoising Module (U-Net):** A customized U-Net model designed to suppress structural vibration noise and environmental interference.
 3.  **CoLA-Net (Convolutional LSTM with Attention):** The core regression model that extracts resonance textures (1D-CNN), fuses mass features, and models temporal dependencies (LSTM + Attention) for precise concentration estimation.
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 .
@@ -30,7 +30,7 @@ The software pipeline consists of three main components:
 └── scripts/         # Sub-scripts for different experimental settings
 ````
 
-## 🛠️ Installation
+## Installation
 
 ### Requirements
 
@@ -54,25 +54,25 @@ The software pipeline consists of three main components:
     pip install -r requirements.txt
     ```
 
-## 📊 Dataset Preparation
+## Dataset Preparation
 
-The system expects the dataset to be organized into merged folders containing `.npy` files for acoustic records (`recordX.npy`) and mass data (`new_weightX.npy`).
+The system expects the dataset to be organized into merged folders containing `.npy` files for acoustic records (`recordX.npy`) and mass data (`weightX.npy`).
 
-Please organize your data as follows:
+Make sure your data as follows:
 
 ```text
 dataset/
 └── merged_dataset_final/
     ├── pu_1_guo_0_zhe_0/
     │   ├── record0.npy
-    │   ├── new_weight0.npy
+    │   ├── weight0.npy
     │   └── ...
     ├── ...
 ```
 
 *Note: You can configure the dataset path using the `--root_dir` argument.*
 
-## 🚀 Usage
+## Usage
 
 ### 1\. One-Click Reproduction
 
@@ -120,7 +120,7 @@ To run the model in inference mode (requires pre-trained models in `models/`):
 python main.py --mode val --model_name CoLANet
 ```
 
-## ⚙️ Arguments
+## Arguments
 
 The `main.py` script supports the following arguments:
 
@@ -133,6 +133,6 @@ The `main.py` script supports the following arguments:
 | `--bandwidth` | `1500` | Acoustic bandwidth features |
 | `--solute_quantity`| `None` | Filter for specific solute quantities (e.g., 1 for single solute) |
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License.
