@@ -128,7 +128,7 @@ The `main.py` script supports the following arguments:
 | :--- | :--- | :--- |
 | `--model_name` | `CoLANet` | Model variant (e.g., `CoLANet`, `ResNet18`, `TCN`, `Unet_denoise`) |
 | `--mode` | `train` | Execution mode: `train` or `val` |
-| `--root_dir` | `../dataset` | Path to the training dataset root directory |
+| `--root_dir` | `./dataset/merged_dataset_final` | Path to the training dataset root directory |
 | `--duration` | `100` | Acoustic signal duration (frames) |
 | `--bandwidth` | `1500` | Acoustic bandwidth features |
 | `--solute_quantity`| `None` | Filter for specific solute quantities (e.g., 1 for single solute) |
