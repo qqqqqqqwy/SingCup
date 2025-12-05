@@ -14,7 +14,7 @@ User can simply pour the test liquid into the **SingCup** container and obtain t
 
 ## ▶ Video
 
-[🎥 SingCup Demonstration Video](media/singcup_video_compress.mp4)
+[🎥 SingCup Demonstration Video](https://youtu.be/CAHkLkwz4Co)
 
 🛠 Implementation
 
