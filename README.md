@@ -13,9 +13,11 @@ SingCup is a low-cost, non-contact system designed to detect sugar concentration
 User can simply pour the test liquid into the **SingCup** container and obtain the sugar concentrations. Following this:
 
 ## ▶ Video
+
 [🎥 SingCup Demonstration Video](media/singcup_video_compress.mp4)
 
 🛠 Implementation
+
 <img src="media/implement.jpg" alt="implementation" width="400"/>
 
 ## System Architecture
