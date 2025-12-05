@@ -5,7 +5,18 @@
 
 This repository contains the official PyTorch implementation for the paper: **"SingCup: Solute-level Sugar Concentration Detection via Variable Acoustic Resonance Channel Modeling"**.
 
-SingCup is a low-cost, compact system designed to detect sugar concentration in liquids using active acoustic sensing. Unlike traditional static liquid-induced channel modeling methods, SingCup leverages **Variable Resonance Spectrograms (VRS)** generated during the liquid pouring process to capture rich, dynamic channel responses.
+SingCup is a low-cost, non-contact system designed to detect sugar concentration for liquids using active acoustic sensing. Unlike traditional static liquid-induced channel modeling methods, SingCup leverages **Variable Resonance Spectrograms (VRS)** generated during the liquid pouring process to capture rich, dynamic channel responses.
+
+
+## 🎬 Demonstration
+
+User can simply pour the test liquid into the **SingCup** container and obtain the sugar concentrations. Following this:
+
+## ▶ Video
+[🎥 SingCup Demonstration Video](media/singcup_video_compress.mp4)
+
+🛠 Implementation
+<img src="media/implement.jpg" alt="implementation" width="400"/>
 
 ## System Architecture
 
