@@ -27,6 +27,7 @@ The software pipeline consists of three main components:
 1.  **VRS Generation:** Captures dynamic resonance patterns via STFT as liquid is poured.
 2.  **Denoising Module (U-Net):** A customized U-Net model designed to suppress structural vibration noise and environmental interference.
 3.  **CoLA-Net (Convolutional LSTM with Attention):** The core regression model that extracts resonance textures (1D-CNN), fuses mass features, and models temporal dependencies (LSTM + Attention) for precise concentration estimation.
+4.  **Data Augmentation:** We apply VRS-specific augmentations to simulate diverse pouring behaviors and system variations, improving model robustness and generalization..
 
 ## Project Structure
 
